@@ -1,0 +1,1004 @@
+/* =======================================
+   FlaskBlog Stylesheet
+======================================= */
+
+/* Google Font */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+
+/* =======================================
+   Global
+======================================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#f5f7fb;
+
+    color:#222;
+
+}
+
+
+/* =======================================
+   Navbar
+======================================= */
+
+.navbar{
+
+    background:#111827;
+
+    padding:15px 0;
+
+}
+
+.navbar-brand{
+
+    font-size:28px;
+
+    font-weight:700;
+
+}
+
+.navbar-brand span{
+
+    color:#ffc107;
+
+}
+
+.nav-link{
+
+    color:#ffffff !important;
+
+    margin-left:15px;
+
+    transition:.3s;
+
+}
+
+.nav-link:hover{
+
+    color:#ffc107 !important;
+
+}
+
+.dropdown-menu{
+
+    border:none;
+
+    border-radius:15px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.15);
+
+}
+
+
+/* =======================================
+   Hero
+======================================= */
+
+.hero-section{
+
+    background:linear-gradient(
+
+        135deg,
+
+        #2563eb,
+
+        #1e3a8a
+
+    );
+
+    color:#fff;
+
+    padding:110px 0;
+
+}
+
+.hero-tag{
+
+    display:inline-block;
+
+    background:rgba(255,255,255,.2);
+
+    padding:8px 18px;
+
+    border-radius:50px;
+
+    font-size:14px;
+
+    letter-spacing:1px;
+
+}
+
+.hero-title{
+
+    font-size:60px;
+
+    font-weight:800;
+
+    margin-top:20px;
+
+}
+
+.hero-title span{
+
+    color:#ffc107;
+
+}
+
+.hero-text{
+
+    font-size:20px;
+
+    max-width:760px;
+
+    margin:auto;
+
+    opacity:.95;
+
+}
+
+
+/* =======================================
+   Buttons
+======================================= */
+
+.btn{
+
+    border-radius:50px;
+
+    transition:.3s;
+
+    font-weight:600;
+
+}
+
+.btn:hover{
+
+    transform:translateY(-3px);
+
+}
+
+
+/* =======================================
+   Cards
+======================================= */
+
+.card{
+
+    border:none;
+
+    border-radius:20px;
+
+    transition:.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.12);
+
+}
+
+
+/* =======================================
+   Section Title
+======================================= */
+
+section h2{
+
+    font-weight:700;
+
+}
+
+section p{
+
+    line-height:1.8;
+
+}
+
+/* =======================================
+   About Section
+======================================= */
+
+#about{
+
+    background:#ffffff;
+
+}
+
+#about .card{
+
+    overflow:hidden;
+
+}
+
+
+/* =======================================
+   Feature Cards
+======================================= */
+
+.feature-card{
+
+    text-align:center;
+
+    padding:35px 25px;
+
+}
+
+.feature-card i{
+
+    font-size:55px;
+
+    margin-bottom:20px;
+
+}
+
+.feature-card h4{
+
+    font-weight:700;
+
+    margin-bottom:15px;
+
+}
+
+.feature-card p{
+
+    color:#666;
+
+}
+
+
+/* =======================================
+   Forms
+======================================= */
+
+.form-control{
+
+    border-radius:12px;
+
+    padding:14px;
+
+    border:1px solid #dcdcdc;
+
+    box-shadow:none;
+
+}
+
+.form-control:focus{
+
+    border-color:#2563eb;
+
+    box-shadow:0 0 0 .15rem rgba(37,99,235,.20);
+
+}
+
+.form-label{
+
+    font-weight:600;
+
+}
+
+
+/* =======================================
+   Input Group
+======================================= */
+
+.input-group .btn{
+
+    border-radius:0 12px 12px 0;
+
+}
+
+
+/* =======================================
+   Login & Register
+======================================= */
+
+.card-body{
+
+    position:relative;
+
+}
+
+.card-body hr{
+
+    margin:25px 0;
+
+}
+
+
+/* =======================================
+   Profile
+======================================= */
+
+.profile-card{
+
+    text-align:center;
+
+}
+
+.profile-card i{
+
+    font-size:90px;
+
+    color:#ffc107;
+
+}
+
+.profile-card h3{
+
+    margin-top:20px;
+
+    font-weight:700;
+
+}
+
+
+/* =======================================
+   Statistics
+======================================= */
+
+.stats-card h1{
+
+    font-size:48px;
+
+    font-weight:700;
+
+}
+
+.stats-card p{
+
+    color:#666;
+
+}
+
+
+/* =======================================
+   Posts
+======================================= */
+
+.card-title{
+
+    font-weight:700;
+
+}
+
+.card-text{
+
+    color:#555;
+
+}
+
+.card-footer{
+
+    background:#fff;
+
+}
+
+
+/* =======================================
+   Post Details
+======================================= */
+
+.post-content{
+
+    white-space:pre-line;
+
+    font-size:18px;
+
+    line-height:1.9;
+
+}
+
+
+/* =======================================
+   Comment Box
+======================================= */
+
+.comment-card{
+
+    border-left:4px solid #2563eb;
+
+    margin-top:20px;
+
+}
+
+.comment-card h6{
+
+    font-weight:600;
+
+}
+
+/* =======================================
+   Footer
+======================================= */
+
+.footer{
+
+    background:#111827;
+
+    color:#ffffff;
+
+}
+
+.footer h3,
+.footer h5{
+
+    color:#ffffff;
+
+    font-weight:700;
+
+}
+
+.footer p{
+
+    color:#cbd5e1;
+
+}
+
+.footer a{
+
+    color:#cbd5e1;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.footer a:hover{
+
+    color:#ffc107;
+
+    padding-left:5px;
+
+}
+
+.footer hr{
+
+    border-color:rgba(255,255,255,.15);
+
+}
+
+
+/* =======================================
+   Flash Messages
+======================================= */
+
+.alert{
+
+    border:none;
+
+    border-radius:12px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+
+/* =======================================
+   Dropdown
+======================================= */
+
+.dropdown-item{
+
+    padding:10px 18px;
+
+    transition:.3s;
+
+}
+
+.dropdown-item:hover{
+
+    background:#f5f7fb;
+
+    color:#2563eb;
+
+}
+
+
+/* =======================================
+   Tables
+======================================= */
+
+.table{
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+}
+
+.table thead{
+
+    background:#2563eb;
+
+    color:#ffffff;
+
+}
+
+
+/* =======================================
+   Links
+======================================= */
+
+a{
+
+    transition:.3s;
+
+}
+
+a:hover{
+
+    text-decoration:none;
+
+}
+
+
+/* =======================================
+   Icons
+======================================= */
+
+.bi{
+
+    vertical-align:middle;
+
+}
+
+
+/* =======================================
+   Shadow Utilities
+======================================= */
+
+.shadow-sm{
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08)!important;
+
+}
+
+.shadow{
+
+    box-shadow:0 10px 30px rgba(0,0,0,.12)!important;
+
+}
+
+
+/* =======================================
+   Animation
+======================================= */
+
+.card,
+.btn{
+
+    transition:all .3s ease;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.btn:hover{
+
+    transform:translateY(-2px);
+
+}
+
+
+/* =======================================
+   Spacing
+======================================= */
+
+section{
+
+    overflow:hidden;
+
+}
+
+/* =======================================
+   Responsive Design
+======================================= */
+
+@media (max-width:992px){
+
+    .hero-section{
+
+        padding:70px 0;
+
+        text-align:center;
+
+    }
+
+    .hero-title{
+
+        font-size:42px;
+
+    }
+
+    .hero-text{
+
+        font-size:18px;
+
+    }
+
+    .navbar-nav{
+
+        margin-top:20px;
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .hero-title{
+
+        font-size:34px;
+
+    }
+
+    .hero-text{
+
+        font-size:16px;
+
+    }
+
+    .hero-section{
+
+        padding:60px 20px;
+
+    }
+
+    .btn{
+
+        width:100%;
+
+        margin-bottom:12px;
+
+    }
+
+    .card{
+
+        margin-bottom:20px;
+
+    }
+
+    .footer{
+
+        text-align:center;
+
+    }
+
+}
+
+@media (max-width:576px){
+
+    .hero-title{
+
+        font-size:28px;
+
+    }
+
+    .hero-tag{
+
+        font-size:12px;
+
+        padding:6px 14px;
+
+    }
+
+    .display-1{
+
+        font-size:70px;
+
+    }
+
+    .display-3{
+
+        font-size:48px;
+
+    }
+
+}
+
+
+/* =======================================
+   Smooth Animation
+======================================= */
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+.card{
+
+    animation:fadeIn .5s ease;
+
+}
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+/* =======================================
+   Utility Classes
+======================================= */
+
+.rounded-4{
+
+    border-radius:20px !important;
+
+}
+
+.text-primary{
+
+    color:#2563eb !important;
+
+}
+
+.text-warning{
+
+    color:#ffc107 !important;
+
+}
+
+.bg-light{
+
+    background:#f8fafc !important;
+
+}
+
+.border-0{
+
+    border:none !important;
+
+}
+
+
+/* =======================================
+   Scrollbar
+======================================= */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#f1f1f1;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#2563eb;
+
+    border-radius:10px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#1e40af;
+
+}
+
+.feature-card{
+
+    transition:all .35s ease;
+
+}
+
+.feature-card:hover{
+
+    transform:translateY(-12px) scale(1.03);
+
+    box-shadow:0 30px 60px rgba(0,0,0,.18);
+
+}
+
+.feature-card hr{
+
+    transition:all .35s ease;
+
+}
+
+.feature-card:hover hr{
+
+    width:60% !important;
+
+}
+
+.feature-card:hover i{
+
+    transform:scale(1.15) rotate(-5deg);
+
+}
+
+/* =======================================
+   Feature Card Colors
+======================================= */
+
+.card-blue{
+    background:linear-gradient(135deg,#eef5ff,#dbeafe);
+}
+
+.card-green{
+    background:linear-gradient(135deg,#ecfff4,#d1fae5);
+}
+
+.card-yellow{
+    background:linear-gradient(135deg,#fffbea,#fef3c7);
+}
+
+.card-red{
+    background:linear-gradient(135deg,#fff1f2,#ffe4e6);
+}
+
+/* =======================================
+   About Card
+======================================= */
+
+.about-card{
+
+    background:linear-gradient(
+        135deg,
+        #ffffff 0%,
+        #dbeafe 35%,
+        #c7d2fe 70%,
+        #cffafe 100%
+    );
+
+    border:none;
+
+    border-radius:25px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+.about-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 25px 55px rgba(0,0,0,.15);
+
+}
+
+/* =======================================
+   CTA Card
+======================================= */
+
+.cta-card{
+
+    background:linear-gradient(
+        135deg,
+        #ffffff 0%,
+        #dbeafe 35%,
+        #c7d2fe 70%,
+        #cffafe 100%
+    );
+
+    border:none;
+
+    border-radius:25px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+    transition:all .35s ease;
+
+}
+
+.cta-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 25px 55px rgba(0,0,0,.15);
+
+}
+
+/* =======================================
+   About Page Cards
+======================================= */
+
+.about-card-1{
+
+    background:linear-gradient(
+        135deg,
+        #ffffff 0%,
+        #dbeafe 35%,
+        #c7d2fe 70%,
+        #cffafe 100%
+    );
+
+}
+
+.about-card-2{
+
+    background:linear-gradient(
+        135deg,
+        #ffffff 0%,
+        #e9d5ff 35%,
+        #c7d2fe 70%,
+        #dbeafe 100%
+    );
+
+}
+
+.about-card-3{
+
+    background:linear-gradient(
+        135deg,
+        #ffffff 0%,
+        #cffafe 35%,
+        #dbeafe 70%,
+        #c7d2fe 100%
+    );
+
+}
+
+.about-card-1,
+.about-card-2,
+.about-card-3{
+
+    border:none;
+
+    border-radius:25px;
+
+    transition:all .35s ease;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+}
+
+.about-card-1:hover,
+.about-card-2:hover,
+.about-card-3:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 25px 55px rgba(0,0,0,.15);
+
+}
